@@ -1,0 +1,19 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // 3.0.9 works:
+//    implementation 'org.codehaus.groovy:groovy-all:3.0.9'
+
+    // 3.0.10 doesn't:
+    implementation 'org.codehaus.groovy:groovy-all:3.0.10'
+}
